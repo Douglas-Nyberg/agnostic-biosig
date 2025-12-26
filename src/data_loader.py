@@ -1,7 +1,7 @@
 from pathlib import Path
 import pandas as pd
 
-def load_data(data134Path="agnostic_biosig/data/Data2022"):
+def load_data(data134Path="data/Data2022"):
     data_path = Path(data134Path)
     txt_files = list(data_path.glob("*.txt"))
     three_d_files = [f for f in data_path.glob("*.3d") 
